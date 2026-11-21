@@ -1,0 +1,11 @@
+# iPhone 12 mini (iPhone13,1), iOS build 24B156. Console (wifip2pd / deviceaccessd), same run as android_caseK.
+# Sanitized: MAC addresses, PINs, key material, service-specific info (device names), UUIDs and pointers are redacted. Unrelated lines removed.
+# Date: 2026-11-20, times are JST (UTC+9).
+
+Default	21:19:42.332912+0900	wifip2pd	NANPairingResponder <To: <MAC>>: [Pair Setup] Caching Mode: nik
+Default	21:19:42.332994+0900	wifip2pd	NANPairingResponder <To: <MAC>>: [Pair Setup] Pairing Mode: Pin Code
+Default	21:19:47.859057+0900	wifip2pd	NANPairingResponder <To: <MAC>>: state: authenticated
+Default	21:19:48.123785+0900	wifip2pd	Successfully added new paired Device <DEVICE_RECORD_REDACTED>
+Default	21:19:48.126986+0900	deviceaccessd	[WiFi] WiFi Aware Pairing succeeded
+Default	21:20:07.472100+0900	wifip2pd	NANPairingResponder <To: <MAC>>: [Pair Verify] Caching Mode: NIK(<KEY_MATERIAL_REDACTED>)
+Default	21:20:07.981034+0900	wifip2pd	NANPairingResponder <To: <MAC>>: state: authenticated

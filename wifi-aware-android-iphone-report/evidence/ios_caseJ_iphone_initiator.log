@@ -1,0 +1,30 @@
+# iPhone 12 mini (iPhone13,1), iOS build 24B156. Console (wifip2pd / deviceaccessd), same run as android_caseJ.
+# Sanitized: MAC addresses, PINs, key material, service-specific info (device names), UUIDs and pointers are redacted. Unrelated lines removed.
+# Date: 2026-11-20, times are JST (UTC+9).
+
+Default	21:45:04.455420+0900	wifip2pd	NANPairingInitiator <To: <MAC>>: [Pair Setup] Requested Method: Pin Code
+Default	21:45:04.455558+0900	wifip2pd	NANPairingInitiator <To: <MAC>>: [Pair Setup] Caching Mode: nik
+Default	21:45:11.259208+0900	wifip2pd	NANPairingInitiator <To: <MAC>>: state: authenticated
+Default	21:45:11.310878+0900	wifip2pd	Successfully added new paired Device <DEVICE_RECORD_REDACTED>
+Default	21:45:11.311739+0900	wifip2pd	NANPairingInitiator <To: <MAC>>: Indicating auth success to NANDatapathInitiator (Pair Setup)
+Default	21:45:11.312983+0900	deviceaccessd	[WiFi] WiFi Aware Pairing succeeded
+Default	21:45:23.848368+0900	wifip2pd	NANPairingInitiator <To: <MAC>>: [Pair Verify] Caching Mode: NIK(<KEY_MATERIAL_REDACTED>)
+Default	21:45:23.854872+0900	wifip2pd	NANPairingInitiator <To: <MAC>>: Not authenticated. datapathTransientKey is nil
+Default	21:45:24.892237+0900	wifip2pd	NANPairingInitiator <To: <MAC>>: state: authenticated
+Default	21:45:24.892276+0900	wifip2pd	NANPairingInitiator <To: <MAC>>: Indicating auth success to NANDatapathInitiator (Pair Verify)
+Default	21:45:24.892962+0900	wifip2pd	NANPairingInitiator <To: <MAC>>: Pairing is in authenticated state, using datapathTransientKey
+Default	21:45:24.893429+0900	wifip2pd	start(configuration:) APPLE80211_IOC_NAN_DP_REQ datapathID=1 responderPublishID=1
+Error	21:45:25.934779+0900	wifip2pd	nan_event: parse(event:) APPLE80211_M_NAN_DP_END
+Default	21:45:25.935364+0900	wifip2pd	terminate(datapathID:initiatorAddress:) APPLE80211_IOC_NAN_DP_END datapathID=1 initiatorAddr=<MAC>
+Default	21:45:25.935950+0900	wifip2pd	Apple80211IOCTLSetWrapper:6935 @[94267.303773] ifname['nan0'] IOUC type 318/'APPLE80211_IOC_NAN_DP_END', len[20] return 22/0x00000016
+Default	21:45:25.958169+0900	wifip2pd	#### Connection failed
+Default	21:46:37.741209+0900	wifip2pd	NANPairingInitiator <To: <MAC>>: [Pair Verify] Caching Mode: NIK(<KEY_MATERIAL_REDACTED>)
+Default	21:46:37.748284+0900	wifip2pd	NANPairingInitiator <To: <MAC>>: Not authenticated. datapathTransientKey is nil
+Default	21:46:38.268608+0900	wifip2pd	NANPairingInitiator <To: <MAC>>: state: authenticated
+Default	21:46:38.268637+0900	wifip2pd	NANPairingInitiator <To: <MAC>>: Indicating auth success to NANDatapathInitiator (Pair Verify)
+Default	21:46:38.269103+0900	wifip2pd	NANPairingInitiator <To: <MAC>>: Pairing is in authenticated state, using datapathTransientKey
+Default	21:46:38.269861+0900	wifip2pd	start(configuration:) APPLE80211_IOC_NAN_DP_REQ datapathID=1 responderPublishID=1
+Error	21:46:38.805161+0900	wifip2pd	nan_event: parse(event:) APPLE80211_M_NAN_DP_END
+Default	21:46:38.805808+0900	wifip2pd	terminate(datapathID:initiatorAddress:) APPLE80211_IOC_NAN_DP_END datapathID=1 initiatorAddr=<MAC>
+Default	21:46:38.806674+0900	wifip2pd	Apple80211IOCTLSetWrapper:6935 @[94340.174828] ifname['nan0'] IOUC type 318/'APPLE80211_IOC_NAN_DP_END', len[20] return 22/0x00000016
+Default	21:46:38.826236+0900	wifip2pd	#### Connection failed

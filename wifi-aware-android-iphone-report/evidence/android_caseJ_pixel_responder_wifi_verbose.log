@@ -1,0 +1,171 @@
+# Pixel 9 / Android 17 (CP3A.261005.005), Wi-Fi verbose logging ON. Case J: Pixel publishes with framework-offloaded pairing, iPhone subscribes and initiates NDP.
+# Sanitized: MAC addresses, PINs, key material, service-specific info (device names), UUIDs and pointers are redacted. Unrelated lines removed.
+# Date: 2026-11-20, times are JST (UTC+9).
+
+11-20 21:45:01.611 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J PRESET / OS_OFFLOAD=REQUESTED A3=EXPLICIT NETWORK_REQUEST=PREARM_OPEN API37_INBOUND=true APP_RESPONSE=NONE noAppPayload=true automaticUnregisterOnAvailable=true
+11-20 21:45:03.292  1087  1167 I WifiHAL : NAN CMD: NAN_VERSION_INFO
+11-20 21:45:03.301  1087  1087 I WifiHAL : NAN CMD: NAN_REQUEST_ENABLE
+11-20 21:45:03.451  1795  2227 D WifiAwareDataPathStMgr: createAllInterfaces
+11-20 21:45:03.462  1087  1087 I WifiHAL : NAN CMD: NAN_DATA_PATH_IFACE_CREATE
+11-20 21:45:03.475 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J PUBLISH / offloadRequested=true offloadConfigured=true appA3Explicit=true networkRequest=PREARM_WHEN_DIAG_START noManualResponse=true ndpSecurityConfig=ABSENT_OPEN noAppPayload=true
+11-20 21:45:03.485  1087  1087 I WifiHAL : Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:45:03.486  1087  1087 I WifiHAL : NAN CMD: NAN_REQUEST_GET_CAPABILTIES
+11-20 21:45:03.486  1087  1087 I WifiHAL : Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:45:03.488  1795  2227 V WifiAwareDataPathStMgr: onInterfaceCreated: interfaceName=aware_data0
+11-20 21:45:03.513  1795  2163 V WifiAwareService: maybeInjectAutoPairingConfiguration: Injected default AwarePairingConfig for PIN/Passphrase Display
+11-20 21:45:03.517  1087  1087 I WifiHAL : NAN CMD: NAN_REQUEST_PUBLISH
+11-20 21:45:03.531  1087  1087 I WifiHAL : Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:45:04.825  1087  3059 I WifiHAL : Received NAN_EVENT_BOOTSTRAPPING_REQUEST
+11-20 21:45:04.830  1795  2737 V WifiNanIfaceCallbackAidlImpl: eventBootstrappingRequest:
+11-20 21:45:04.835  1795  2227 I WifiAwareAutoPairingManager: startAutoPairingAsPublisher for peerId: 264
+11-20 21:45:04.841  1087  1087 I WifiHAL : Nan Pairing bootstrapping cmd 27 , halHandle = <PTR> TxId 7952 
+11-20 21:45:04.841  1087  1087 I WifiHAL : NAN CMD: NAN_BOOTSTRAPPING_IND_RESPONSE
+11-20 21:45:04.841  1087  1087 I WifiHAL : Enter: createBootstrappingIndResponse
+11-20 21:45:04.841  1087  1087 I WifiHAL : Exit: createBootstrappingIndResponse
+11-20 21:45:04.850  1087  1087 I WifiHAL :  Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:45:04.853  1795  2737 V WifiNanIfaceCallbackAidlImpl: notifyRespondToBootstrappingIndicationResponse: id=?? status=0 (NAN_STATUS_SUCCESS)
+11-20 21:45:05.326  1087  3059 I WifiHAL : Received NAN_EVENT_BOOTSTRAPPING_CONFIRMATION
+11-20 21:45:05.326  1087  3059 I WifiHAL : bootstrapping instance id: 88
+11-20 21:45:05.330  1795  2737 V WifiNanIfaceCallbackAidlImpl: eventBootstrappingConfirm:
+11-20 21:45:05.332  1795  2227 I WifiAwareAutoPairingManager: onBootStrappingConfirmReceived for peerId: 264, success: true, method: 2
+11-20 21:45:05.341  1795  2227 I WifiAwareAutoPairingManager: Creating AwarePairingDisplayDialog for peerId: 264, passphrase: <PIN_REDACTED>
+11-20 21:45:11.088  1087  3059 I WifiHAL : Received NAN_EVENT_PAIRING_REQUEST
+11-20 21:45:11.088  1087  3059 I WifiHAL : Pairing request type: 0
+11-20 21:45:11.094  1795  2227 I WifiAwareAutoPairingManager: onPairingRequestReceived for peerId: 264, requestId: 1
+11-20 21:45:11.095  1087  1087 I WifiHAL : Nan Pairing bootstrapping cmd 24 , halHandle = <PTR> TxId 7953 
+11-20 21:45:11.095  1087  1087 I WifiHAL : NAN CMD: NAN_PAIRING_IND_RESPONSE
+11-20 21:45:11.129  1087  1087 I WifiHAL :  Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:45:11.130  1795  2606 V WifiNanIfaceCallbackAidlImpl: notifyRespondToPairingIndicationResponse: id=?? status=0 (NAN_STATUS_SUCCESS)
+11-20 21:45:11.630  1087  3059 I WifiHAL : Received NAN_EVENT_PAIRING_CONFIRMATION
+11-20 21:45:11.630  1087  3059 I WifiHAL : Pairing request type: 0
+11-20 21:45:11.632  1795  2227 I WifiAwareAutoPairingManager: onPairingConfirmReceived for peerId: 264, success: true
+11-20 21:45:11.633  1795  2227 I WifiAwareAutoPairingManager: Ending session AutoPairingSession{isPublisher=true, state=4, cachedPinPassphrase=<PIN_REDACTED>, sessionStartTime=2026-11-20 21:45:04.835, sessionEndTime=2026-11-20 21:45:11.632, sessionEndReason=Pairing successful}
+11-20 21:45:17.763 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J START / OS_OFFLOAD=true A3_EXPLICIT=true NETWORK_REQUEST=PREARM_OPEN API37_INBOUND=true APP_RESPONSE=NONE noAppData=true encryptedNdpExpected=false
+11-20 21:45:17.774 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J NETWORK_REQUEST_REGISTERED / callbackRegistered=true publisherWildcard=true securityConfig=ABSENT_OPEN noManualResponder=true noAppPayload=true timeoutMs=90000
+11-20 21:45:17.774 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J PREARM RESULT / registered=true offloadConfigured=true security=OPEN_SPECIFIER compareAgainst=FIX26_CASE_I noAppResponse=true
+11-20 21:45:17.782 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J PAIRING ALIAS INVENTORY / stage=DIAG_START appVisibleCount=3 OS_AUTO_PAIRING_SESSION_COUNT=UNOBSERVABLE noAliasesLogged=true
+11-20 21:45:17.786  1795  2227 V WifiAwareDataPathStMgr: WifiAwareNetworkFactory.acceptRequest: request=NetworkRequest [ REQUEST id=68788, [ Transports: WIFI_AWARE Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_BANDWIDTH_CONSTRAINED Specifier: <WifiAwareNetworkSpecifier [type=1, role=1, clientId=247, sessionId=249, peerId=0, peerMac=<null>, securityConfig=null, port=0, transportProtocol=-1, channel=0, forceChannel= ...[truncated]
+11-20 21:45:17.786  1795  2227 V WifiAwareDataPathStMgr: processNetworkSpecifier: networkSpecifier=WifiAwareNetworkSpecifier [type=1, role=1, clientId=247, sessionId=249, peerId=0, peerMac=<null>, securityConfig=null, port=0, transportProtocol=-1, channel=0, forceChannel=false, index=0]
+11-20 21:45:17.786  1795  2227 V WifiAwareDataPathStMgr: getNetworkRequestByCanonicalDescriptor: cci=CanonicalConnectionInfo: [peerDiscoveryMac=, security=, sessionId=249, uid=10449]
+11-20 21:45:17.786  1795  2227 V WifiAwareDataPathStMgr: WifiAwareNetworkFactory.needNetworkFor: networkRequest=
+11-20 21:45:24.729  1087  3059 I WifiHAL : Received NAN_EVENT_PAIRING_REQUEST
+11-20 21:45:24.729  1087  3059 I WifiHAL : Pairing request type: 1
+11-20 21:45:24.735  1087  1087 I WifiHAL : Nan Pairing bootstrapping cmd 24 , halHandle = <PTR> TxId 7954 
+11-20 21:45:24.735  1087  1087 I WifiHAL : NAN CMD: NAN_PAIRING_IND_RESPONSE
+11-20 21:45:24.754  1087  1087 I WifiHAL :  Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:45:24.754  1795  3082 V WifiNanIfaceCallbackAidlImpl: notifyRespondToPairingIndicationResponse: id=?? status=0 (NAN_STATUS_SUCCESS)
+11-20 21:45:25.246  1087  3059 I WifiHAL : Received NAN_EVENT_PAIRING_CONFIRMATION
+11-20 21:45:25.246  1087  3059 I WifiHAL : Pairing request type: 1
+11-20 21:45:25.248  1795  2227 I WifiAwareAutoPairingManager: onPairingConfirmReceived for peerId: 265, success: true
+11-20 21:45:25.248  1795  2227 E WifiAwareAutoPairingManager: Failed to get AutoPairingSession for peerId: 265
+11-20 21:45:25.275 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J PAIR VERIFY / count=1 requestRegistered=true secureNdp=NOT_PROVEN
+11-20 21:45:25.282 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J PAIRING ALIAS INVENTORY / stage=PAIR_VERIFY_CALLBACK appVisibleCount=3 OS_AUTO_PAIRING_SESSION_COUNT=UNOBSERVABLE noAliasesLogged=true
+11-20 21:45:25.775  1087  3059 I WifiHAL : Received NAN_EVENT_DATA_REQUEST_INDICATION
+11-20 21:45:25.775  1087  3059 I WifiHAL : security: 1
+11-20 21:45:25.775  1087  3059 I WifiHAL : peer csia_capabilities: 4
+11-20 21:45:25.777  1795  2227 V WifiAwareDataPathStMgr: onDataPathRequest: pubSubId=1, mac=<MAC>, ndpId=246
+11-20 21:45:25.781  1795  2227 V WifiAwareDataPathStMgr: selectInterfaceForRequest: req=AwareNetworkRequestInformation: state=103, ns=WifiAwareNetworkSpecifier [type=1, role=1, clientId=247, sessionId=249, peerId=0, peerMac=<null>, securityConfig=null, port=0, transportProtocol=-1, channel=0, forceChannel=false, index=48], uid=10449, packageName=jp.nezolink.app, interfaceName=null, pubSubId=1, specifiedPeerInstanceId ...[truncated]
+11-20 21:45:25.781  1795  2227 V WifiAwareDataPathStMgr: selectInterfaceForRequest: unUsed=[aware_data0], inuse=[], invalid[], allInterfaces[aware_data0]
+11-20 21:45:25.783  1795  2227 V WifiAwareStateManager: respondToDataPathRequestLocal(): transactionId=7955, accept=true, ndpId=246, interfaceName=aware_data0, securityConfig=null, isOutOfBand=false, appInfo=<null>, peerDiscoveryMac=<MAC>
+11-20 21:45:25.783  1795  2227 V WifiAwareNativeApi: respondToDataPathRequest: transactionId=7955, accept=true, int ndpId=246, interfaceName=aware_data0, appInfo.length=0, securityConfignull, isOutOfBand=false, capabilities=Capabilities [maxConcurrentAwareClusters=1, maxPublishes=8, maxSubscribes=8, maxServiceNameLen=255, maxMatchFilterLen=255, maxTotalMatchFilterLen=510, maxServiceSpecificInfoLen=255, maxExtendedServiceSpecificInfoLen=255, maxNdiInterfaces=1, maxNdpSessions=8, maxAppInfoLen=255, maxQueuedTransmitMessages=8, maxSubscribeInterfaceAddresses=10, supportedCipherSuites=1, supportedPairingCipherSuites=48, gtkCipherSuites=64, isInstantCommunicationModeSupport=true, isNanPairingSupported=true, isSetClusterIdSupported=false, isSuspensionSupported=true, is6gSupported=false, isHeSupported=false, isPeriodicRangingSupported=false, isRangingSupported=false, isDualBandSupported=true, maxScheduleChannels=0, maxSupportedRangingPktBandWidth=-1,maxSupportedRxChains=2], pubSubId=1, frameProtectionEnabled=true, peerMac=<MAC>
+11-20 21:45:25.784  1087  1087 I WifiHAL : NAN CMD: NAN_DATA_PATH_IND_RESPONSE
+11-20 21:45:25.788  1087  1087 I WifiHAL : Received nan_error string NAN_STATUS_INVALID_PARAM
+11-20 21:45:25.789  1795  3082 V WifiNanIfaceCallbackAidlImpl: notifyRespondToDataPathIndicationResponse: id=?? status=5 (NAN_STATUS_INVALID_PARAM)
+11-20 21:45:25.790  1795  2227 E WifiNanIfaceAidlImpl: respondToDataPathRequest failed with service-specific exception: android.os.ServiceSpecificException: unknown (code 9)
+11-20 21:45:25.790  1795  2227 V WifiAwareDataPathStMgr: onRespondToDataPathRequest: ndpId=246, success=false
+11-20 21:45:25.790  1795  2227 W WifiAwareDataPathStMgr: onRespondToDataPathRequest: request WifiAwareNetworkSpecifier [type=1, role=1, clientId=247, sessionId=249, peerId=0, peerMac=<null>, securityConfig=null, port=0, transportProtocol=-1, channel=0, forceChannel=false, index=48] failed responding
+11-20 21:45:25.794  1087  1087 I WifiHAL : NAN CMD: NAN_DATA_PATH_END
+11-20 21:45:25.800  1087  1087 I WifiHAL : Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:45:26.294  1087  3059 I WifiHAL : Received NAN_EVENT_DATA_CONFIRMATION
+11-20 21:45:26.297  1795  2227 V WifiAwareDataPathStMgr: onDataPathConfirm: ndpId=246, mac=<MAC>, accept=false, reason=0, message.length=7, channelInfo=[]
+11-20 21:45:26.297  1795  2227 W WifiAwareDataPathStMgr: onDataPathConfirm: network request not found for ndpId=246
+11-20 21:46:08.735 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J NETWORK_REQUEST_RELEASED / appDataSent=false
+11-20 21:46:08.736  1795  2227 V WifiAwareDataPathStMgr: WifiAwareNetworkFactory.releaseNetworkFor: networkRequest=NetworkRequest [ REQUEST id=68788, [ Transports: WIFI_AWARE Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_BANDWIDTH_CONSTRAINED Specifier: <WifiAwareNetworkSpecifier [type=1, role=1, clientId=247, sessionId=249, peerId=0, peerMac=<null>, securityConfig=null, port=0, transportProtocol=-1, channel=0, fo ...[truncated]
+11-20 21:46:08.737  1795  2227 V WifiAwareDataPathStMgr: removeSupportForRequest: ns=NetworkRequest [ REQUEST id=68788, [ Transports: WIFI_AWARE Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_BANDWIDTH_CONSTRAINED Specifier: <WifiAwareNetworkSpecifier [type=1, role=1, clientId=247, sessionId=249, peerId=0, peerMac=<null>, securityConfig=null, port=0, transportProtocol=-1, channel=0, forceChannel=false, index=48]> U ...[truncated]
+11-20 21:46:08.737  1795  2227 V WifiAwareDataPathStMgr: releaseNetworkFor: there are no further requests, networkRequest=NetworkRequest [ REQUEST id=68788, [ Transports: WIFI_AWARE Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_BANDWIDTH_CONSTRAINED Specifier: <WifiAwareNetworkSpecifier [type=1, role=1, clientId=247, sessionId=249, peerId=0, peerMac=<null>, securityConfig=null, port=0, transportProtocol=-1, channe ...[truncated]
+11-20 21:46:08.741 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J TEST SUMMARY / requestRegistered=true ndpIndications=0 pairVerifyCallbacks=1 networkAvailableCallbacks=0 appDataSent=false ndpSecurity=OPEN_SPECIFIER encryptedNdp=NOT_PROVEN autoPairingSession=CHECK_FRAMEWORK_LOG pairVerifyFailures=0 noManualResponder=true releasedOnConnected=0 frameworkRequestMatch=CHECK_SYSTEM_LOG
+11-20 21:46:08.742  1795  2227 I WifiAwareAutoPairingManager: terminate
+11-20 21:46:08.743  1087  1167 I WifiHAL : NAN CMD: NAN_REQUEST_PUBLISH_CANCEL
+11-20 21:46:08.751  1087  1167 I WifiHAL : Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:46:08.751  1087  3059 I WifiHAL : pub termination reason: NAN_STATUS_SUCCESS, len = 18
+11-20 21:46:08.756  1795  2227 D WifiAwareDataPathStMgr: deleteAllInterfaces
+11-20 21:46:08.756  1795  2227 D WifiAwareDataPathStMgr: onAwareDownCleanupDataPaths
+11-20 21:46:08.757  1087  1167 I WifiHAL : NAN CMD: NAN_DATA_PATH_IFACE_DELETE
+11-20 21:46:08.811  1087  1167 I WifiHAL : hal status = 0, resp_string NAN_STATUS_SUCCESS
+11-20 21:46:08.818  1795  2227 D WifiAwareDataPathStMgr: onInterfaceDeleted: interfaceName=aware_data0
+11-20 21:46:08.821  1087  1167 I WifiHAL : NAN CMD: NAN_REQUEST_DISABLE
+11-20 21:46:08.869  1087  3059 I WifiHAL :  Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:46:08.876  1087  1167 I WifiHAL : NAN CMD: NAN_REQUEST_DISABLE
+11-20 21:46:08.882  1087  1167 I WifiHAL : NAN CMD: NAN_DATA_PATH_IFACE_DELETE
+11-20 21:46:08.883  1087  1167 I WifiHAL : NAN CMD: NAN_DATA_PATH_IFACE_DELETE
+11-20 21:46:25.825 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J PRESET / OS_OFFLOAD=REQUESTED A3=EXPLICIT NETWORK_REQUEST=PREARM_OPEN API37_INBOUND=true APP_RESPONSE=NONE noAppPayload=true automaticUnregisterOnAvailable=true
+11-20 21:46:29.647  1087  1087 I WifiHAL : NAN CMD: NAN_VERSION_INFO
+11-20 21:46:29.653  1087  1167 I WifiHAL : NAN CMD: NAN_REQUEST_ENABLE
+11-20 21:46:29.811  1795  2227 D WifiAwareDataPathStMgr: createAllInterfaces
+11-20 21:46:29.814  1087  1167 I WifiHAL : NAN CMD: NAN_DATA_PATH_IFACE_CREATE
+11-20 21:46:29.824 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J PUBLISH / offloadRequested=true offloadConfigured=true appA3Explicit=true networkRequest=PREARM_WHEN_DIAG_START noManualResponse=true ndpSecurityConfig=ABSENT_OPEN noAppPayload=true
+11-20 21:46:29.835  1795  4477 V WifiAwareService: maybeInjectAutoPairingConfiguration: Injected default AwarePairingConfig for PIN/Passphrase Display
+11-20 21:46:29.844  1087  1167 I WifiHAL : Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:46:29.844  1087  1167 I WifiHAL : NAN CMD: NAN_REQUEST_GET_CAPABILTIES
+11-20 21:46:29.845  1087  1167 I WifiHAL : Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:46:29.848  1795  2227 V WifiAwareDataPathStMgr: onInterfaceCreated: interfaceName=aware_data0
+11-20 21:46:29.851  1087  1167 I WifiHAL : NAN CMD: NAN_REQUEST_PUBLISH
+11-20 21:46:29.859  1087  1167 I WifiHAL : Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:46:35.793 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J START / OS_OFFLOAD=true A3_EXPLICIT=true NETWORK_REQUEST=PREARM_OPEN API37_INBOUND=true APP_RESPONSE=NONE noAppData=true encryptedNdpExpected=false
+11-20 21:46:35.799 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J NETWORK_REQUEST_REGISTERED / callbackRegistered=true publisherWildcard=true securityConfig=ABSENT_OPEN noManualResponder=true noAppPayload=true timeoutMs=90000
+11-20 21:46:35.800 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J PREARM RESULT / registered=true offloadConfigured=true security=OPEN_SPECIFIER compareAgainst=FIX26_CASE_I noAppResponse=true
+11-20 21:46:35.809 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J PAIRING ALIAS INVENTORY / stage=DIAG_START appVisibleCount=3 OS_AUTO_PAIRING_SESSION_COUNT=UNOBSERVABLE noAliasesLogged=true
+11-20 21:46:36.000  1795  2227 V WifiAwareDataPathStMgr: WifiAwareNetworkFactory.acceptRequest: request=NetworkRequest [ REQUEST id=68795, [ Transports: WIFI_AWARE Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_BANDWIDTH_CONSTRAINED Specifier: <WifiAwareNetworkSpecifier [type=1, role=1, clientId=248, sessionId=250, peerId=0, peerMac=<null>, securityConfig=null, port=0, transportProtocol=-1, channel=0, forceChannel= ...[truncated]
+11-20 21:46:36.000  1795  2227 V WifiAwareDataPathStMgr: processNetworkSpecifier: networkSpecifier=WifiAwareNetworkSpecifier [type=1, role=1, clientId=248, sessionId=250, peerId=0, peerMac=<null>, securityConfig=null, port=0, transportProtocol=-1, channel=0, forceChannel=false, index=0]
+11-20 21:46:36.000  1795  2227 V WifiAwareDataPathStMgr: getNetworkRequestByCanonicalDescriptor: cci=CanonicalConnectionInfo: [peerDiscoveryMac=, security=, sessionId=250, uid=10449]
+11-20 21:46:36.000  1795  2227 V WifiAwareDataPathStMgr: WifiAwareNetworkFactory.needNetworkFor: networkRequest=
+11-20 21:46:38.301  1087  3059 I WifiHAL : Received NAN_EVENT_PAIRING_REQUEST
+11-20 21:46:38.301  1087  3059 I WifiHAL : Pairing request type: 1
+11-20 21:46:38.309  1087  1087 I WifiHAL : Nan Pairing bootstrapping cmd 24 , halHandle = <PTR> TxId 7965 
+11-20 21:46:38.309  1087  1087 I WifiHAL : NAN CMD: NAN_PAIRING_IND_RESPONSE
+11-20 21:46:38.331  1087  1087 I WifiHAL :  Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:46:38.332  1795  3082 V WifiNanIfaceCallbackAidlImpl: notifyRespondToPairingIndicationResponse: id=?? status=0 (NAN_STATUS_SUCCESS)
+11-20 21:46:38.625  1087  3059 I WifiHAL : Received NAN_EVENT_PAIRING_CONFIRMATION
+11-20 21:46:38.626  1087  3059 I WifiHAL : Pairing request type: 1
+11-20 21:46:38.630  1795  2227 I WifiAwareAutoPairingManager: onPairingConfirmReceived for peerId: 266, success: true
+11-20 21:46:38.630  1795  2227 E WifiAwareAutoPairingManager: Failed to get AutoPairingSession for peerId: 266
+11-20 21:46:38.644 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J PAIR VERIFY / count=1 requestRegistered=true secureNdp=NOT_PROVEN
+11-20 21:46:38.658 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J PAIRING ALIAS INVENTORY / stage=PAIR_VERIFY_CALLBACK appVisibleCount=3 OS_AUTO_PAIRING_SESSION_COUNT=UNOBSERVABLE noAliasesLogged=true
+11-20 21:46:39.143  1087  3059 I WifiHAL : Received NAN_EVENT_DATA_REQUEST_INDICATION
+11-20 21:46:39.143  1087  3059 I WifiHAL : security: 1
+11-20 21:46:39.143  1087  3059 I WifiHAL : peer csia_capabilities: 4
+11-20 21:46:39.145  1795  2227 V WifiAwareDataPathStMgr: onDataPathRequest: pubSubId=1, mac=<MAC>, ndpId=178
+11-20 21:46:39.146  1795  2227 V WifiAwareDataPathStMgr: selectInterfaceForRequest: req=AwareNetworkRequestInformation: state=103, ns=WifiAwareNetworkSpecifier [type=1, role=1, clientId=248, sessionId=250, peerId=0, peerMac=<null>, securityConfig=null, port=0, transportProtocol=-1, channel=0, forceChannel=false, index=49], uid=10449, packageName=jp.nezolink.app, interfaceName=null, pubSubId=1, specifiedPeerInstanceId ...[truncated]
+11-20 21:46:39.146  1795  2227 V WifiAwareDataPathStMgr: selectInterfaceForRequest: unUsed=[aware_data0], inuse=[], invalid[], allInterfaces[aware_data0]
+11-20 21:46:39.147  1795  2227 V WifiAwareStateManager: respondToDataPathRequestLocal(): transactionId=7966, accept=true, ndpId=178, interfaceName=aware_data0, securityConfig=null, isOutOfBand=false, appInfo=<null>, peerDiscoveryMac=<MAC>
+11-20 21:46:39.147  1795  2227 V WifiAwareNativeApi: respondToDataPathRequest: transactionId=7966, accept=true, int ndpId=178, interfaceName=aware_data0, appInfo.length=0, securityConfignull, isOutOfBand=false, capabilities=Capabilities [maxConcurrentAwareClusters=1, maxPublishes=8, maxSubscribes=8, maxServiceNameLen=255, maxMatchFilterLen=255, maxTotalMatchFilterLen=510, maxServiceSpecificInfoLen=255, maxExtendedServiceSpecificInfoLen=255, maxNdiInterfaces=1, maxNdpSessions=8, maxAppInfoLen=255, maxQueuedTransmitMessages=8, maxSubscribeInterfaceAddresses=10, supportedCipherSuites=1, supportedPairingCipherSuites=48, gtkCipherSuites=64, isInstantCommunicationModeSupport=true, isNanPairingSupported=true, isSetClusterIdSupported=false, isSuspensionSupported=true, is6gSupported=false, isHeSupported=false, isPeriodicRangingSupported=false, isRangingSupported=false, isDualBandSupported=true, maxScheduleChannels=0, maxSupportedRangingPktBandWidth=-1,maxSupportedRxChains=2], pubSubId=1, frameProtectionEnabled=true, peerMac=<MAC>
+11-20 21:46:39.148  1087  1087 I WifiHAL : NAN CMD: NAN_DATA_PATH_IND_RESPONSE
+11-20 21:46:39.152  1087  1087 I WifiHAL : Received nan_error string NAN_STATUS_INVALID_PARAM
+11-20 21:46:39.153  1795  1880 V WifiNanIfaceCallbackAidlImpl: notifyRespondToDataPathIndicationResponse: id=?? status=5 (NAN_STATUS_INVALID_PARAM)
+11-20 21:46:39.154  1795  2227 E WifiNanIfaceAidlImpl: respondToDataPathRequest failed with service-specific exception: android.os.ServiceSpecificException: unknown (code 9)
+11-20 21:46:39.154  1795  2227 V WifiAwareDataPathStMgr: onRespondToDataPathRequest: ndpId=178, success=false
+11-20 21:46:39.154  1795  2227 W WifiAwareDataPathStMgr: onRespondToDataPathRequest: request WifiAwareNetworkSpecifier [type=1, role=1, clientId=248, sessionId=250, peerId=0, peerMac=<null>, securityConfig=null, port=0, transportProtocol=-1, channel=0, forceChannel=false, index=49] failed responding
+11-20 21:46:39.156  1087  1087 I WifiHAL : NAN CMD: NAN_DATA_PATH_END
+11-20 21:46:39.159  1087  1087 I WifiHAL : Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:46:39.162  1087  3059 I WifiHAL : Received NAN_EVENT_DATA_CONFIRMATION
+11-20 21:46:39.163  1795  2227 V WifiAwareDataPathStMgr: onDataPathConfirm: ndpId=178, mac=<MAC>, accept=false, reason=0, message.length=7, channelInfo=[]
+11-20 21:46:39.163  1795  2227 W WifiAwareDataPathStMgr: onDataPathConfirm: network request not found for ndpId=178
+11-20 21:46:46.052 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J NETWORK_REQUEST_RELEASED / appDataSent=false
+11-20 21:46:46.053  1795  2227 V WifiAwareDataPathStMgr: WifiAwareNetworkFactory.releaseNetworkFor: networkRequest=NetworkRequest [ REQUEST id=68795, [ Transports: WIFI_AWARE Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_BANDWIDTH_CONSTRAINED Specifier: <WifiAwareNetworkSpecifier [type=1, role=1, clientId=248, sessionId=250, peerId=0, peerMac=<null>, securityConfig=null, port=0, transportProtocol=-1, channel=0, fo ...[truncated]
+11-20 21:46:46.053  1795  2227 V WifiAwareDataPathStMgr: removeSupportForRequest: ns=NetworkRequest [ REQUEST id=68795, [ Transports: WIFI_AWARE Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_BANDWIDTH_CONSTRAINED Specifier: <WifiAwareNetworkSpecifier [type=1, role=1, clientId=248, sessionId=250, peerId=0, peerMac=<null>, securityConfig=null, port=0, transportProtocol=-1, channel=0, forceChannel=false, index=49]> U ...[truncated]
+11-20 21:46:46.053  1795  2227 V WifiAwareDataPathStMgr: releaseNetworkFor: there are no further requests, networkRequest=NetworkRequest [ REQUEST id=68795, [ Transports: WIFI_AWARE Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_BANDWIDTH_CONSTRAINED Specifier: <WifiAwareNetworkSpecifier [type=1, role=1, clientId=248, sessionId=250, peerId=0, peerMac=<null>, securityConfig=null, port=0, transportProtocol=-1, channe ...[truncated]
+11-20 21:46:46.057 18999 18999 I NEZO-AWARE-LAB: FIX27 CASE J TEST SUMMARY / requestRegistered=true ndpIndications=0 pairVerifyCallbacks=1 networkAvailableCallbacks=0 appDataSent=false ndpSecurity=OPEN_SPECIFIER encryptedNdp=NOT_PROVEN autoPairingSession=CHECK_FRAMEWORK_LOG pairVerifyFailures=0 noManualResponder=true releasedOnConnected=0 frameworkRequestMatch=CHECK_SYSTEM_LOG
+11-20 21:46:46.058  1795  2227 I WifiAwareAutoPairingManager: terminate
+11-20 21:46:46.059  1087  1087 I WifiHAL : NAN CMD: NAN_REQUEST_PUBLISH_CANCEL
+11-20 21:46:46.067  1087  1087 I WifiHAL : Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:46:46.069  1087  3059 I WifiHAL : pub termination reason: NAN_STATUS_SUCCESS, len = 18
+11-20 21:46:46.069  1795  2227 D WifiAwareDataPathStMgr: deleteAllInterfaces
+11-20 21:46:46.069  1795  2227 D WifiAwareDataPathStMgr: onAwareDownCleanupDataPaths
+11-20 21:46:46.070  1087  1087 I WifiHAL : NAN CMD: NAN_DATA_PATH_IFACE_DELETE
+11-20 21:46:46.135  1087  1087 I WifiHAL : hal status = 0, resp_string NAN_STATUS_SUCCESS
+11-20 21:46:46.137  1795  2227 D WifiAwareDataPathStMgr: onInterfaceDeleted: interfaceName=aware_data0
+11-20 21:46:46.138  1087  1087 I WifiHAL : NAN CMD: NAN_REQUEST_DISABLE
+11-20 21:46:46.187  1087  3059 I WifiHAL :  Received nan_error string NAN_STATUS_SUCCESS
+11-20 21:46:46.189  1087  1087 I WifiHAL : NAN CMD: NAN_REQUEST_DISABLE
+11-20 21:46:46.189  1087  1087 I WifiHAL : NAN CMD: NAN_DATA_PATH_IFACE_DELETE
+11-20 21:46:46.190  1087  1087 I WifiHAL : NAN CMD: NAN_DATA_PATH_IFACE_DELETE
